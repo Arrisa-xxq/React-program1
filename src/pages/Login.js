@@ -1,23 +1,24 @@
 import React from 'react'
-import login from  '../assets/css/Login.module.css'
+import style from  '../assets/css/Login.module.css'
+import {Link} from 'react-router-dom'
 
 export default class Login extends React.Component{
     render(){
         return (
-            <div className={login.content}>
-        <p className="fhbtn"><a href="mydoc_m.html"></a></p>
+            <div className={style['content']}>
+        <p className="fhbtn"><a href="###"></a></p>
         <h1></h1>
-        <div className="login-box">
-          <p className="lsolid"></p>
-          <div className="login">
-            <a href="###">登录</a>
+        <div className={style['login-box']}>
+          <p className={style['lsolid']}></p>
+          <div className={style['login']}>
+          <Link href="###" to='/login'>登录</Link>
             <span></span>
-            <a href="###">注册</a>
+            <Link href="###" to='/reg'>注册</Link>
           </div>
-          <p className="rsolid"></p>
+          <p className={style['rsolid']}></p>
         </div>
         <ul>
-          <li className="lifirst">
+          <li className={style['lifirst']}>
             <input type="text" defaultValue=""/>
             <span>帐号</span>
           </li>
@@ -26,9 +27,9 @@ export default class Login extends React.Component{
             <span>密码</span>
           </li>
         </ul>
-        <div className="footbox">
-          <input type="button" value="登 录" className="login-btn"/>
-          <a href="" className="tishi">忘记密码？</a>
+        <div className={style['footbox']}>
+          <input type="button" value="登 录" className={style['login-btn']}/>
+          <a href="" className={style['tishi']}>忘记密码？</a>
         </div>
       </div>
         )

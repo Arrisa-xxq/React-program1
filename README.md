@@ -66,3 +66,14 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+8-16
+组件之间样式冲突，解决办法：
+	        a) 命名空间  BEM  √
+
+			b) 模块化:
+				引入 import 变量  from './css/xx.module.css' 模块
+				使用 <xx className={变量.类名|id}  ||
+                     <p className={style['lsolid']}></p>
+				配置2 改名xx.css -> xx.module.css 需要模块化的才修改,不影响其他非模块化css写法

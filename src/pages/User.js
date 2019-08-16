@@ -1,14 +1,16 @@
 import React from 'react';
 import '../assets/css/User.css'
+import {NavLink} from 'react-router-dom' 
+
 export default class User extends React.Component{
   render(){
     return (
       <div className="content">
         <div className="header">
-          <h2><img src="/assets/img/headimg.png" alt=""/></h2>
+          <h2><img src="/img/headimg.png" alt=""/></h2>
           <div className="user-box">
-            <a href="login_m.html">登录</a>
-            <a href="reg_m.html">注册</a>
+            <NavLink href="###" to='/login'>登录</NavLink>
+            <NavLink href="###" to='/reg'>注销</NavLink>
           </div>
           <ul className="clear">
             <li>
